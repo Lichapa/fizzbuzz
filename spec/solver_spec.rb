@@ -9,5 +9,7 @@ describe Solver do
     expect(@solver).to be_instance_of Solver
   end
 
+  
+
 
 end
