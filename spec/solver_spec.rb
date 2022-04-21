@@ -37,4 +37,23 @@ describe Solver do
       expect(@solver.reverse('love')).to eq('evol')
     end
   end
+
+  context 'testing fizzbuzz method' do
+    it 'returns fizz on number divisible by 3' do
+      number = @solver.fizzbuzz(3)
+      expect(number).to eq 'Fizz'
+    end
+    it 'returns buzz on number divisible by 5' do
+      number = @solver.fizzbuzz(5)
+      expect(number).to eq 'Buzz'
+    end
+    it 'returns fizz on number divisible by 3 and 5' do
+      number = @solver.fizzbuzz(15)
+      expect(number).to eq 'FizzBuzz'
+    end
+    it 'returns number on number not divisible by 3 or 5' do
+      number = @solver.fizzbuzz(7)
+      expect(number).to eq '7'
+    end
+  end
 end
