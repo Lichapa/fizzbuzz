@@ -1,5 +1,5 @@
 class Solver
-  def factorial(num) 
+  def factorial(num)
     if num.zero?
       1
     elsif num.negative?
@@ -7,5 +7,9 @@ class Solver
     else
       num * factorial(num - 1)
     end
+  end
+
+  def reverse(str)
+    str.chars.reverse.join
   end
 end
