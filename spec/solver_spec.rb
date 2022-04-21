@@ -28,4 +28,13 @@ describe Solver do
       expect { @solver.factorial(-1) }.to raise_error(ArgumentError)
     end
   end
+
+  context 'testing reverse string method' do
+    it 'returns a string reversed' do
+      expect(@solver.reverse('hello')).to eq('olleh')
+    end
+    it 'returns a reversed string' do
+      expect(@solver.reverse('love')).to eq('evol')
+    end
+  end
 end
